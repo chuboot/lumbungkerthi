@@ -27,14 +27,6 @@ body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-h1 {
-  font-family: "Lora", Times, serif;
-  font-size: 3.5rem;
-  font-weight: 600;
-  color: var(--primary);
-  line-height: 1.2;
-}
-
 main {
   background-color: #fff;
 }
@@ -120,7 +112,7 @@ nav li a:hover {
 .burger-btn div {
   width: 25px;
   height: 2px;
-  background-color: rgb(238, 238, 238);
+  background-color: var(--soft);
   margin-bottom: 3px;
 }
 
@@ -139,18 +131,21 @@ nav li a:hover {
   object-fit: cover;
 }
 
-/* .aboutus,
-.explore,
-.facility {
-  padding-top: 20rem;
-} */
-
 .hero-tagline {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   /* border: 1px solid pink; */
+}
+
+.hero-tagline h1 {
+  font-family: "Lora", Times, serif;
+  font-size: 3.5rem;
+  font-weight: 600;
+  color: var(--primary);
+  line-height: 1.2;
 }
 
 .hero-tagline p {
@@ -472,6 +467,10 @@ td {
     font-weight: 700;
   }
 
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+
   .burger-btn {
     display: block;
     z-index: 4;
@@ -541,7 +540,18 @@ td {
 
 @media screen and (max-width: 600px) {
   .hero-tagline {
-    margin-top: 2rem;
+    margin-top: 3rem;
+    width: 70%;
+  }
+  .hero-tagline h1 {
+    font-family: "Lora", Times, serif;
+    font-size: 2.5rem;
+  }
+
+  .btn {
+    /* background-color: var(--accent); */
+    background-color: rgba(100, 204, 197, 0.7);
+    backdrop-filter: blur(30px);
   }
 }
 
