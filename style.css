@@ -544,5 +544,7 @@ td {
 
 .bg-nav-color {
   /* background-color: #b6b4b4; */
-  background-color: rgba(100, 204, 197, 1);
+  background-color: rgba(100, 204, 197, 0.7);
+  /* background-color: rgb(100% 204% 197% / 0.7); */
+  backdrop-filter: blur(30px);
 }
