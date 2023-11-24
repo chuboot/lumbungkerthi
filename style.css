@@ -19,10 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  text-align: center;
-}
-
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
@@ -32,7 +28,6 @@ main {
 }
 
 footer {
-  /* background-color: yellowgreen; */
   font-size: 1rem;
   color: #0000006b;
 }
@@ -43,6 +38,7 @@ footer h5 {
   font-size: 1.8rem;
   color: var(--primary);
 }
+
 footer h6 {
   font-size: 1.2rem;
   font-weight: 400;
@@ -157,7 +153,6 @@ nav li a:hover {
 .aboutus {
   display: flex;
   padding: 5rem 0;
-  /* border: 1px solid tomato; */
   align-content: space-between;
   height: 100vh;
 }
@@ -169,16 +164,16 @@ nav li a:hover {
   color: #fff;
   margin: 1rem 0;
 }
+
 .aboutus h5 {
   font-family: "Lora", Times, serif;
   font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
-
   margin: 1rem 0;
 }
+
 .aboutus p {
-  /* font-size: 1rem; */
   color: #fff;
   line-height: 150%;
   font-weight: 400;
@@ -191,12 +186,12 @@ nav li a:hover {
 
 .col-item {
   flex: 1 1 0;
-  /* border: 1px solid tomato; */
 }
 
 .pr-3 {
   padding-right: 2rem;
 }
+
 .pl-3 {
   padding-left: 2rem;
 }
@@ -224,10 +219,8 @@ nav li a:hover {
 .wrapper {
   display: flex;
   padding: 2rem 0;
-  /* border: 1px solid tomato; */
   justify-content: space-between;
   align-items: end;
-  /* height: 100vh; */
 }
 
 .w-social {
@@ -253,7 +246,6 @@ nav li a:hover {
 .card {
   width: 30%;
   margin-top: 2rem;
-  /* border: 1px solid tomato; */
 }
 
 .card img {
@@ -261,6 +253,46 @@ nav li a:hover {
   height: 80%;
   object-fit: cover;
   border-radius: 20px;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+  cursor: pointer;
+}
+
+.card img:hover {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.card h2 {
+  position: relative;
+  inset: auto auto 70px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  /* font-family: "Mon", sans-serif; */
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 5;
+  color: #fff;
+}
+
+/* &:hover h2 {
+  inset: auto auto 100px 30px;
+  transition: inset 0.3s ease-out;
+} */
+
+.card p {
+  position: relative;
+  opacity: 0;
+  z-index: 5;
+  max-width: 80%;
+  color: #fff;
+  /* transition: opacity 0.3s ease-out; */
+  inset: auto auto 70px 30px;
+}
+
+.card p:hover {
+  opacity: 1;
+  /* transition: opacity 0.5s 0.1s ease-in; */
 }
 
 .explore {
@@ -276,11 +308,11 @@ nav li a:hover {
   margin: 1rem 0;
 }
 
-.explore p {
+/* .explore p {
   line-height: 150%;
   font-weight: 400;
   opacity: 75%;
-}
+} */
 
 .facility {
   display: flex;
@@ -296,6 +328,7 @@ nav li a:hover {
   font-weight: 500;
   margin: 1rem 0;
 }
+
 .facility h5 {
   font-family: "Lora", Times, serif;
   font-size: 1.2rem;
@@ -304,7 +337,6 @@ nav li a:hover {
   margin: 1rem 0;
 }
 .facility p {
-  /* font-size: 1rem; */
   line-height: 150%;
   font-weight: 400;
   opacity: 75%;
@@ -549,7 +581,6 @@ td {
   }
 
   .btn {
-    /* background-color: var(--accent); */
     background-color: rgba(100, 204, 197, 0.7);
     backdrop-filter: blur(30px);
   }
@@ -561,8 +592,6 @@ td {
 }
 
 .bg-nav-color {
-  /* background-color: #b6b4b4; */
   background-color: rgba(100, 204, 197, 0.7);
-  /* background-color: rgb(100% 204% 197% / 0.7); */
   backdrop-filter: blur(30px);
 }
